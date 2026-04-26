@@ -88,18 +88,6 @@ function subscribe(cb: () => void) {
   };
 }
 
-export function useBookings(): Booking[] {
-  return useSyncExternalStore(
-    subscribe,
-    () => {
-      // Return reference-stable serialization
-      return localStorage.getItem(BOOKINGS_KEY) ?? "[]";
-    },
-    () => "[]",
-  ) as unknown as Booking[] extends never ? never : Booking[] extends Booking[] ? Booking[] : never extends infer _ ? Booking[] : never extends infer _ ? Booking[] : Booking[] extends infer _ ? Booking[] : Booking[];
-}
-
-// Simpler hook returning parsed bookings reactively
 export function useLiveBookings(): Booking[] {
   const snap = useSyncExternalStore(
     subscribe,

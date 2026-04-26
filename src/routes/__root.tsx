@@ -40,6 +40,13 @@ export const Route = createRootRoute({
       { name: "author", content: "SudsUp" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "SudsUp — Hostel Washing Machine Booking" },
+      { name: "twitter:title", content: "SudsUp — Hostel Washing Machine Booking" },
+      { name: "description", content: "Laundry Spot is a web application for hostel students to book washing machine slots and view real-time availability." },
+      { property: "og:description", content: "Laundry Spot is a web application for hostel students to book washing machine slots and view real-time availability." },
+      { name: "twitter:description", content: "Laundry Spot is a web application for hostel students to book washing machine slots and view real-time availability." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/923181bb-92a6-41f5-9001-9cc394d631be/id-preview-0d0b7807--9d3b1ed9-4260-4a49-874a-dd064a26222d.lovable.app-1777205100745.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/923181bb-92a6-41f5-9001-9cc394d631be/id-preview-0d0b7807--9d3b1ed9-4260-4a49-874a-dd064a26222d.lovable.app-1777205100745.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
